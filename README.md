@@ -14,16 +14,14 @@
 - PyTorch 1.7+
 - Transformers 4.0+
 - CUDA 10.1+（使用GPU训练）
-- 其他依赖：`numpy`, `tqdm`, `apex`（可选，用于混合精度训练）
 
 ### 安装依赖
 pip install torch transformers numpy tqdm
-# 如需使用混合精度训练，请安装apex
 git clone https://github.com/NVIDIA/apex
 cd apex
 pip install -v --disable-pip-version-check --no-cache-dir ./
 
-## 使用方法
+## 项目流程
 
 ### 1. 数据准备
 将《红楼梦》文本处理为JSON格式，存放于`data/train.json`，格式要求：
